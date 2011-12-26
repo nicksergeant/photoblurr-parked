@@ -1,0 +1,721 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*:focus {
+  -webkit-box-shadow: 0 0 10px #47b7f2;
+  -moz-box-shadow: 0 0 10px #47b7f2;
+  box-shadow: 0 0 10px #47b7f2;
+}
+html, body {
+  background-color: #E4E4E4;
+}
+body {
+  color: #8F8F8F;
+  font: normal 20px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  letter-spacing: -0.025em;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+}
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.hidden {
+  display: none;
+}
+body.home div.top {
+  background: #000000 url('/media/images/home-top-bg.jpg?7fa49edcc2de') top center no-repeat;
+  padding: 65px 0 31px 0;
+}
+body.home div.top a.logo {
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 228px;
+}
+body.home div.top div.stage {
+  background-color: #000;
+  margin: 30px auto  auto;
+  min-height: 440px;
+  position: relative;
+  width: 800px;
+  -webkit-box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+body.home div.top div.stage video {
+  display: block;
+}
+body.home div.top div.stage a#control {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body.home div.top div.stage a#control span {
+  background: rgba(100, 100, 100, 0.7) url('/media/images/play.png?7fa49edcc2de') 53% center no-repeat;
+  display: block;
+  height: 70px;
+  left: 365px;
+  position: absolute;
+  top: 185px;
+  width: 70px;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 5px;
+  -moz-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+body.home div.top div.stage a#control.pause span {
+  background: rgba(100, 100, 100, 0.7) url('/media/images/pause.gif?7fa49edcc2de') center center no-repeat;
+}
+body.home div.top div.stage a#control.replay span {
+  background: rgba(100, 100, 100, 0.7) url('/media/images/replay.png?7fa49edcc2de') center center no-repeat;
+}
+body.home div.bottom {
+  background: transparent url('/media/images/home-bottom-bg.png?7fa49edcc2de') top left repeat-x;
+  padding-top: 25px;
+  text-align: center;
+}
+body.home div.bottom div.what {
+  background: transparent url('/media/images/pitch.png?7fa49edcc2de') top left no-repeat;
+  height: 64px;
+  margin: 0 auto;
+  width: 314px;
+}
+body.home div.bottom p {
+  font-size: 16px;
+  margin-top: 35px;
+}
+body.home div.bottom p.small {
+  color: #999999;
+  letter-spacing: normal;
+  line-height: 16px;
+  margin-top: 25px;
+  font-size: 12px;
+}
+body.home div.bottom form {
+  height: 32px;
+  margin-top: 25px;
+}
+body.home div.bottom form div.infield {
+  margin: 0 auto;
+  position: relative;
+  width: 530px;
+}
+body.home div.bottom form label {
+  color: #CCCCCC;
+  cursor: text;
+  font: normal 18px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  left: 8px;
+  position: absolute;
+  top: 5px;
+  z-index: 51;
+}
+body.home div.bottom form input.text {
+  border: 1px solid #B5B5B5;
+  float: left;
+  font: normal 18px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  height: 30px;
+  margin: 0;
+  padding: 0 6px;
+  width: 308px;
+  z-index: 50;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  -webkit-box-shadow: inset 1px 2px 2px #dbdbdb;
+  -moz-box-shadow: inset 1px 2px 2px #dbdbdb;
+  box-shadow: inset 1px 2px 2px #dbdbdb;
+}
+body.home div.bottom form input.submit {
+  background: green;
+  border: 1px solid #A0C48A;
+  color: #FFF;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font: bold 16px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  height: 30px;
+  margin-left: 10px;
+  text-align: center;
+  text-shadow: 0 -1px 1px rgba(70, 119, 56, 0.75);
+  width: 198px;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 10px;
+  -moz-background-clip: padding-box;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-clip: padding-box;
+  background: #a3c580;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dcf1cc), to(#6a9834));
+  background: -moz-linear-gradient(center top, #dcf1cc 0%, #6a9834 100%);
+  background: -moz-gradient(center top, #dcf1cc 0%, #6a9834 100%);
+}
+body.home div.bottom form input.submit:active {
+  background: #a3c580;
+  border: 1px solid #A0C48A;
+}
+body.home div.bottom div.social {
+  margin: 30px auto 0 auto;
+}
+body.home div.bottom div.social div.twitter {
+  margin-top: 10px;
+}
+html.app {
+  background: transparent url('/media/images/app-body-bg.gif?7fa49edcc2de') top left repeat;
+}
+body.app {
+  background: transparent url('/media/images/app-body-bg.gif?7fa49edcc2de') top left repeat;
+}
+body.app .frame {
+  margin: 0 auto;
+  width: 890px;
+}
+body.app div.background {
+  background: transparent url('/media/images/app-picture-bg.jpg?7fa49edcc2de') top center no-repeat;
+  min-height: 970px;
+}
+body.app header {
+  background: #272123 url('/media/images/header-bg.gif?7fa49edcc2de') top left repeat-x;
+  border-bottom: 1px solid #000000;
+  padding: 8px 0;
+}
+body.app header img {
+  display: block;
+  float: left;
+}
+body.app header a.create {
+  border-bottom: 1px solid #A0A0A0;
+  color: #666666;
+  display: inline-block;
+  font: 500 14px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  margin: 0 0 0 30px;
+  padding: 1px 15px 3px 32px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px #FFF;
+  vertical-align: 2px;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 20px;
+  -moz-background-clip: padding-box;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 1px 1px #000000;
+  -moz-box-shadow: 0 1px 1px #000000;
+  box-shadow: 0 1px 1px #000000;
+  background: #ededed url('/media/images/create.png?7fa49edcc2de') 11px 5px no-repeat;
+  background: url('/media/images/create.png?7fa49edcc2de') 11px 5px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dbdbdb));
+  background: url('/media/images/create.png?7fa49edcc2de') 11px 5px no-repeat, -moz-linear-gradient(center top, #ffffff 0%, #dbdbdb 100%);
+  background: url('/media/images/create.png?7fa49edcc2de') 11px 5px no-repeat, -moz-gradient(center top, #ffffff 0%, #dbdbdb 100%);
+}
+body.app header a.create:active {
+  background: #dbdbdb url('/media/images/create.png?7fa49edcc2de') 11px 5px no-repeat;
+  -webkit-box-shadow: inset 0 2px 4px #a9a9a9;
+  -moz-box-shadow: inset 0 2px 4px #a9a9a9;
+  box-shadow: inset 0 2px 4px #a9a9a9;
+}
+body.app nav {
+  padding: 50px 0;
+}
+body.app nav h1 {
+  background: transparent url('/media/images/create-your-own.png?7fa49edcc2de') top left no-repeat;
+  float: left;
+  height: 61px;
+  text-indent: -1000em;
+  width: 327px;
+}
+body.app nav ol {
+  float: right;
+  margin-top: 5px;
+  position: relative;
+}
+body.app nav ol li.circle {
+  background: #ffffff url('/media/images/progress-sprite.png?7fa49edcc2de') top left no-repeat;
+  border: 1px solid #DCDCDC;
+  display: block;
+  float: left;
+  height: 49px;
+  margin-right: 55px;
+  position: relative;
+  text-indent: -1000em;
+  width: 49px;
+  z-index: 50;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 48px;
+  -moz-background-clip: padding-box;
+  -moz-border-radius: 48px;
+  border-radius: 48px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 1px 0 rgba(98, 98, 98, 0.25);
+  -moz-box-shadow: 0 1px 0 rgba(98, 98, 98, 0.25);
+  box-shadow: 0 1px 0 rgba(98, 98, 98, 0.25);
+}
+body.app nav ol li.circle span {
+  border: 1px solid #89B0DA;
+  display: none;
+  height: 45px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 45px;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 48px;
+  -moz-background-clip: padding-box;
+  -moz-border-radius: 48px;
+  border-radius: 48px;
+  background-clip: padding-box;
+}
+body.app nav ol li.active {
+  z-index: 51;
+}
+body.app nav ol li.photos {
+  background-position: 9px 11px;
+}
+body.app nav ol li.photos.active span {
+  display: block;
+  background: #eff7ff url('/media/images/progress-sprite.png?7fa49edcc2de') 7px -38px no-repeat;
+  background: url('/media/images/progress-sprite.png?7fa49edcc2de') 7px -38px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#deeffe));
+  background: url('/media/images/progress-sprite.png?7fa49edcc2de') 7px -38px no-repeat, -moz-linear-gradient(center top, #ffffff 0%, #deeffe 100%);
+  background: url('/media/images/progress-sprite.png?7fa49edcc2de') 7px -38px no-repeat, -moz-gradient(center top, #ffffff 0%, #deeffe 100%);
+}
+body.app nav ol li.music {
+  background-position: -55px 12px;
+}
+body.app nav ol li.music.active span {
+  display: block;
+  background: #eff7ff url('/media/images/progress-sprite.png?7fa49edcc2de') -57px -37px no-repeat;
+  background: url('/media/images/progress-sprite.png?7fa49edcc2de') -57px -37px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#deeffe));
+  background: url('/media/images/progress-sprite.png?7fa49edcc2de') -57px -37px no-repeat, -moz-linear-gradient(center top, #ffffff 0%, #deeffe 100%);
+  background: url('/media/images/progress-sprite.png?7fa49edcc2de') -57px -37px no-repeat, -moz-gradient(center top, #ffffff 0%, #deeffe 100%);
+}
+body.app nav ol li.photoblurr {
+  background-position: -120px 12px;
+  margin-right: 0;
+}
+body.app nav ol li.photoblurr.active span {
+  display: block;
+  background: #eff7ff url('/media/images/progress-sprite.png?7fa49edcc2de') -122px -37px no-repeat;
+  background: url('/media/images/progress-sprite.png?7fa49edcc2de') -122px -37px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#deeffe));
+  background: url('/media/images/progress-sprite.png?7fa49edcc2de') -122px -37px no-repeat, -moz-linear-gradient(center top, #ffffff 0%, #deeffe 100%);
+  background: url('/media/images/progress-sprite.png?7fa49edcc2de') -122px -37px no-repeat, -moz-gradient(center top, #ffffff 0%, #deeffe 100%);
+}
+body.app nav ol li.bar {
+  background-color: #FFF;
+  border-bottom: 1px solid #DCDCDC;
+  border-top: 1px solid #E2E2E2;
+  height: 12px;
+  position: absolute;
+  top: 19px;
+  width: 100%;
+  z-index: 49;
+  -webkit-box-shadow: 0 1px 0 rgba(216, 216, 216, 0.7);
+  -moz-box-shadow: 0 1px 0 rgba(216, 216, 216, 0.7);
+  box-shadow: 0 1px 0 rgba(216, 216, 216, 0.7);
+}
+body.app nav ol li.left-cover {
+  border: 0;
+  left: 48px;
+  height: 12px;
+  top: 20px;
+  width: 60px;
+  z-index: 51;
+  -webkit-box-shadow: 0 0 0 #000000;
+  -moz-box-shadow: 0 0 0 #000000;
+  box-shadow: 0 0 0 #000000;
+}
+body.app nav ol li.right-cover {
+  border: 0;
+  left: 154px;
+  height: 12px;
+  top: 20px;
+  width: 60px;
+  z-index: 51;
+  -webkit-box-shadow: 0 0 0 #000000;
+  -moz-box-shadow: 0 0 0 #000000;
+  box-shadow: 0 0 0 #000000;
+}
+body.app section.instructions {
+  background: #FFF;
+  background: rgba(255, 255, 255, 0.7);
+  height: 191px;
+  left: 0;
+  padding: 25px 0;
+  position: absolute;
+  top: 230px;
+  width: 100%;
+  z-index: 49;
+}
+body.app section.instructions h1 {
+  color: #333;
+  font: bold 18px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+body.app section.instructions div.inner {
+  color: #666;
+  font: normal 14px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  line-height: 18px;
+  width: 243px;
+}
+body.app section.instructions div.inner p {
+  margin: 15px 0;
+}
+body.app section.instructions div.inner div.upload-button {
+  cursor: pointer;
+  height: 33px;
+  position: relative;
+  width: 184px;
+}
+body.app section.instructions div.inner div.upload-button object {
+  height: 33px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 184px;
+  z-index: 51;
+}
+body.app section.instructions div.inner div.upload-button object:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+body.app section.instructions div.inner div.upload-button object:focus + a {
+  -webkit-box-shadow: 0 1px 1px rgba(102, 102, 102, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(102, 102, 102, 0.2);
+  box-shadow: 0 1px 1px rgba(102, 102, 102, 0.2);
+  background: #efefef;
+  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#efefef));
+  background: -moz-linear-gradient(center top, #efefef 0%, #efefef 100%);
+  background: -moz-gradient(center top, #efefef 0%, #efefef 100%);
+}
+body.app section.instructions div.inner div.upload-button object:focus + a span {
+  -webkit-box-shadow: inset 0 1px 1px #c9c9c9;
+  -moz-box-shadow: inset 0 1px 1px #c9c9c9;
+  box-shadow: inset 0 1px 1px #c9c9c9;
+}
+body.app section.instructions div.inner div.upload-button a {
+  border: 1px solid #D0D0D0;
+  color: #6584A7;
+  display: block;
+  float: left;
+  font: bold 14px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  left: 0;
+  position: absolute;
+  text-decoration: none;
+  text-shadow: 0 1px 1px #FFF;
+  top: 0;
+  z-index: 50;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 24px;
+  -moz-background-clip: padding-box;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 1px 1px #666666;
+  -moz-box-shadow: 0 1px 1px #666666;
+  box-shadow: 0 1px 1px #666666;
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#efefef));
+  background: -moz-linear-gradient(center top, #ffffff 0%, #efefef 100%);
+  background: -moz-gradient(center top, #ffffff 0%, #efefef 100%);
+}
+body.app section.instructions div.inner div.upload-button a span {
+  display: block;
+  padding: 6px 0 8px 0;
+  text-align: center;
+  width: 184px;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 24px;
+  -moz-background-clip: padding-box;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  background-clip: padding-box;
+  -webkit-box-shadow: inset 0 -1px 0 #c9c9c9;
+  -moz-box-shadow: inset 0 -1px 0 #c9c9c9;
+  box-shadow: inset 0 -1px 0 #c9c9c9;
+}
+body.app section.instructions div.inner div.upload-button:active a, body.app section.instructions div.inner div.upload-button:focus a {
+  -webkit-box-shadow: 0 1px 1px rgba(102, 102, 102, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(102, 102, 102, 0.2);
+  box-shadow: 0 1px 1px rgba(102, 102, 102, 0.2);
+  background: #efefef;
+  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#efefef));
+  background: -moz-linear-gradient(center top, #efefef 0%, #efefef 100%);
+  background: -moz-gradient(center top, #efefef 0%, #efefef 100%);
+}
+body.app section.instructions div.inner div.upload-button:active a span, body.app section.instructions div.inner div.upload-button:focus a span {
+  -webkit-box-shadow: inset 0 1px 1px #c9c9c9;
+  -moz-box-shadow: inset 0 1px 1px #c9c9c9;
+  box-shadow: inset 0 1px 1px #c9c9c9;
+}
+body.app section.container {
+  background: #FFF;
+  border: 1px solid #E0E0E0;
+  float: right;
+  position: relative;
+  width: 627px;
+  z-index: 51;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  -webkit-box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+body.app section.container a.cheap:focus {
+  outline: none;
+}
+body.app section.container div.inner {
+  min-height: 500px;
+  padding: 10px 0 5px 10px;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+}
+body.app section.container div.upload-photos div.inner {
+  background: transparent url('/media/images/photos-bg.png?7fa49edcc2de') center center no-repeat;
+}
+body.app section.container div.upload-photos footer {
+  background: #f2f2f2 url('/media/images/footer-photos-icon.png?7fa49edcc2de') 15px 13px no-repeat;
+  background: url('/media/images/footer-photos-icon.png?7fa49edcc2de') 15px 13px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#ebebeb));
+  background: url('/media/images/footer-photos-icon.png?7fa49edcc2de') 15px 13px no-repeat, -moz-linear-gradient(center top, #f9f9f9 0%, #ebebeb 100%);
+  background: url('/media/images/footer-photos-icon.png?7fa49edcc2de') 15px 13px no-repeat, -moz-gradient(center top, #f9f9f9 0%, #ebebeb 100%);
+}
+body.app section.container footer {
+  border-top: 1px solid #E0E0E0;
+  height: 36px;
+  padding: 12px 0 13px 42px;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: #f2f2f2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#ebebeb));
+  background: -moz-linear-gradient(center top, #f9f9f9 0%, #ebebeb 100%);
+  background: -moz-gradient(center top, #f9f9f9 0%, #ebebeb 100%);
+}
+body.app section.container footer div.total {
+  color: #666;
+  font: 500 14px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+body.app section.container footer div.footnote {
+  color: #999;
+  font: 500 12px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  margin-top: 2px;
+}
+body.app section.container div.upload-song div.banner {
+  color: #666;
+  font: bold 18px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  height: 23px;
+  padding: 40px 25px;
+}
+body.app section.container div.upload-song div.inner {
+  min-height: 412px;
+  padding: 0;
+}
+body.app section.container div.upload-song div.inner div.uploadifyQueueItem {
+  background: transparent url('/media/images/song-upload-bg.png?7fa49edcc2de') 25px 0 no-repeat;
+  margin: 0;
+  margin-right: 45px;
+  min-height: 84px;
+  padding: 8px 0 0 130px;
+}
+body.app section.container div.upload-song div.inner div.uploadifyQueueItem div.title {
+  color: #666;
+  font: bold 14px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+body.app section.container div.upload-song div.inner div.uploadifyQueueItem div.progress {
+  border: 1px solid #B9CFE8;
+  height: 8px;
+  margin-top: 8px;
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#ffffff));
+  background: -moz-linear-gradient(center top, #f4f4f4 0%, #ffffff 100%);
+  background: -moz-gradient(center top, #f4f4f4 0%, #ffffff 100%);
+}
+body.app section.container div.upload-song div.inner div.uploadifyQueueItem div.progress span {
+  background: transparent url('/media/images/progress-bg.gif?7fa49edcc2de') top left repeat-x;
+  display: block;
+  height: 9px;
+  width: 0%;
+}
+body.app section.container div.upload-song div.inner div.uploadifyQueueItem div.info {
+  color: #CCC;
+  font: 500 12px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  padding-top: 7px;
+}
+body.app section.container div.upload-song footer {
+  color: #D84346;
+  font: 500 15px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  padding-left: 24px;
+}
+body.app section.container div.upload-song footer div {
+  margin-top: 8px;
+}
+body.app section.container div.birth div.inner {
+  min-height: 465px;
+  padding: 45px 25px 5px 25px;
+}
+body.app section.container div.birth div.inner label {
+  color: #666666;
+  display: block;
+  font: bold 18px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  margin-bottom: 5px;
+}
+body.app section.container div.birth div.inner input, body.app section.container div.birth div.inner textarea {
+  border: 1px solid #CCCCCC;
+  color: #666666;
+  font: normal 18px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  margin-bottom: 25px;
+  padding: 5px 0;
+  text-indent: 10px;
+  width: 100%;
+  -webkit-box-shadow: inset 1px 3px 3px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: inset 1px 3px 3px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 1px 3px 3px rgba(0, 0, 0, 0.07);
+}
+body.app section.container div.birth div.inner textarea {
+  min-height: 100px;
+}
+body.app section.container div.birth footer {
+  color: #666;
+  font: 500 15px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  padding-left: 24px;
+}
+body.app section.container div.birth footer div {
+  margin-top: 8px;
+}
+body.app section.container div.birth footer div strong {
+  font-style: italic;
+  font-weight: bold;
+}
+body.app div.bottom {
+  clear: both;
+}
+body.app div.bottom div.frame {
+  background: transparent url('/media/images/arrow.gif?7fa49edcc2de') 708px -48px no-repeat;
+  width: 990px;
+}
+body.app div.bottom a.submit {
+  border: 1px solid #C5C5C5;
+  color: #4D9C1A;
+  display: block;
+  float: right;
+  font: bold 16px 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  margin: 30px 50px 0 0;
+  padding: 5px 20px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px #FFF;
+  -webkit-background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  background: #e7e7e7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#cfcfcf));
+  background: -moz-linear-gradient(center top, #fefefe 0%, #cfcfcf 100%);
+  background: -moz-gradient(center top, #fefefe 0%, #cfcfcf 100%);
+}
+body.app div.bottom a.submit:focus {
+  outline: none;
+}
+body.app div.bottom a.disabled {
+  color: #C0C0C0;
+}
+body.app div.upload-photos div.inner div.uploadifyQueueItem {
+  background: #999999 url('/media/images/loading.gif?7fa49edcc2de') center center no-repeat;
+  border: none;
+  float: left;
+  height: 97px;
+  margin: 0 5px 5px 0;
+  opacity: .1;
+  padding: 0;
+  width: 97px;
+}
+body.app div.upload-photos div.inner div.uploadifyQueueItem div, body.app div.upload-photos div.inner div.uploadifyQueueItem span {
+  display: none;
+}
+body.app div.upload-photos div.inner div.uploadifyError {
+  background-color: red !important;
+  background-image: none;
+  border: none !important;
+}
+body.blur-detail section.inner div.stage {
+  background: black;
+  height: 488px;
+  margin: 40px 0;
+  text-align: center;
+  width: 650px;
+}
+body.blur-detail section.inner div.stage img {
+  display: none;
+}
