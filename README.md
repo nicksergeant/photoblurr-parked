@@ -1,4 +1,4 @@
 Photoblurr.com
 ==============
 
-The website for Photoblurr.
+The website for (the parked) Photoblurr.
